@@ -73,21 +73,23 @@ footer, .disclaimer {
   color: white;
   justify-content: space-between;
   padding: 2rem 3rem;
-  gap: 30%;
 }
 
+.footleft section {
+  display: flex;
+  padding: 0px;
+  justify-content: space-between;
+}
+footer section {
+  text-align: left;
+}
+.footright section {
+  padding: 0px 3rem;
+}
 .disclaimer {
   padding: 3rem;
   border-top: 1px solid white;
 }
-.footleft {
-  flex-basis: 15rem;
-}
-
-footer section {
-  text-align: left;
-}
-
 /******************************************
 /* FONT SIZE, COLOR
 /*******************************************/
