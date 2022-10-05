@@ -73,10 +73,19 @@ footer, .disclaimer {
   color: white;
   justify-content: space-between;
   padding: 2rem 3rem;
+  gap: 30%;
 }
 
 .disclaimer {
-  padding: 0;
+  padding: 3rem;
+  border-top: 1px solid white;
+}
+.footleft {
+  flex-basis: 15rem;
+}
+
+footer section {
+  text-align: left;
 }
 
 /******************************************
@@ -109,4 +118,28 @@ footer {
 }
 #logo {
   width: 3rem;
+}
+
+/******************************************
+/* ADDING MEDIA QUERIES
+/*******************************************/
+@media all and (max-width: 750px) {
+  nav ul, nav button {
+    display: none;
+  }
+  nav img {
+    margin: 0.2rem 45%;
+    width: 4rem;
+  }
+  .secthree img {
+    width: 10rem;
+  }
+  nav, .secthree, footer {
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+
+  .disclaimer img {
+    display: none;
+  }
 }
